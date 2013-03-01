@@ -858,7 +858,7 @@ Copyright (c) 2011 by Harvest
             found = true;
             for (_j = 0, _len1 = words.length; _j < _len1; _j++) {
               word = words[_j];
-              if (option.html.toLowerCase().indexOf(word) < 0) {
+              if (option.html.toLowerCase().indexOf(word) < 0 && option.value.toLowerCase().indexOf(word) < 0) {
                 found = false;
                 break;
               }
